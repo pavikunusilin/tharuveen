@@ -9,14 +9,10 @@
         The Tharu-Ariveen wedding project
       </h2>
       <div class="links">
-        <a href="/" target="_blank" class="button--green">
+        <a href="/" class="button--green">
           Testimonial
         </a>
-        <a
-          href="/guestbook"
-          target="_blank"
-          class="button--grey"
-        >
+        <a href="/guestbook" class="button--grey">
           Form
         </a>
       </div>
