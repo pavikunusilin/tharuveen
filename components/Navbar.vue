@@ -28,7 +28,7 @@
         <a
           href="/"
           title="Home"
-          class="text-black hover:text-blue-500"
+          class="text-black hover:text-purple-600"
         >
           Home
         </a>
@@ -39,7 +39,7 @@
         <a
           href="/journey"
           title="Journey"
-          class="text-black hover:text-blue-500"
+          class="text-black hover:text-purple-600"
         >
           Journey
         </a>
@@ -50,7 +50,7 @@
         <a
           href="/gallery"
           title="gallery"
-          class="text-black hover:text-blue-500"
+          class="text-black hover:text-purple-600"
         >
           Gallery
         </a>
@@ -61,7 +61,7 @@
         <a
           href="/guestbook"
           title="Guestbook"
-          class="text-black hover:text-blue-500"
+          class="text-black hover:text-purple-600"
         >
           Guestbook
         </a>
