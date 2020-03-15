@@ -1,35 +1,23 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <navbar />
       <h1 class="title">
         tharuveen
       </h1>
       <h2 class="subtitle">
         The Tharu-Ariveen wedding project
       </h2>
-      <div class="links">
-        <a href="/" target="_blank" class="button--green">
-          Testimonial
-        </a>
-        <a
-          href="/guestbook"
-          target="_blank"
-          class="button--grey"
-        >
-          Form
-        </a>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Navbar from '~/components/Navbar.vue'
 
 export default {
   components: {
-    Logo
+    Navbar
   }
 }
 </script>

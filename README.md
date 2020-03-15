@@ -20,3 +20,5 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+The way I made it work was to install it normally with npm install lottie-web and then call it in my components as: `import lottie from 'lottie-web/build/player/lottie';`.
