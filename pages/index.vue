@@ -2,6 +2,8 @@
   <div class="container">
     <div>
       <navbar />
+      <title />
+      <!-- <img src="/journey.svg" alt="Journey"/> -->
       <h1 class="title">
         tharuveen
       </h1>
@@ -14,10 +16,12 @@
 
 <script>
 import Navbar from '~/components/Navbar.vue'
+import Title from '~/components/Title.vue'
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    Title
   }
 }
 </script>

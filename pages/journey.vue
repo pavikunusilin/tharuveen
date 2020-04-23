@@ -2,6 +2,7 @@
   <div>
     <navbar />
     <testimony />
+    <testimony />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto w-full pt-8"
+    class="max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto w-full pt-8 pb-8"
   >
     <div class="flex lg:hidden">
       <button
