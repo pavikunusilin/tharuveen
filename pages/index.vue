@@ -2,26 +2,25 @@
   <div class="container">
     <div>
       <navbar />
-      <title />
       <!-- <img src="/journey.svg" alt="Journey"/> -->
-      <h1 class="title">
+      <!-- <h1 class="title">
         tharuveen
-      </h1>
-      <h2 class="subtitle">
+      </h1> -->
+      <!-- <h2 class="subtitle">
         The Tharu-Ariveen wedding project
-      </h2>
+      </h2> -->
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar.vue'
-import Title from '~/components/Title.vue'
+// import Title from '~/components/Title.vue'
 
 export default {
   components: {
-    Navbar,
-    Title
+    Navbar
+    // Title
   }
 }
 </script>

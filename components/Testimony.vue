@@ -1,8 +1,13 @@
 <template>
   <div class="max-w-sm w-full lg:max-w-full lg:flex">
-    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/gallery.svg')" title="Woman holding a mug">
-    </div>
-    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <div
+      class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+      style="background-image: url('/gallery.svg')"
+      title="Woman holding a mug"
+    ></div>
+    <div
+      class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+    >
       <div class="mb-8">
         <!-- <p class="text-sm text-gray-600 flex items-center">
           <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -10,8 +15,14 @@
           </svg>
           Members only
         </p> -->
-        <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-        <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+        <div class="text-gray-900 font-bold text-xl mb-2">
+          Can coffee make you a better developer?
+        </div>
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
+          nihil.
+        </p>
       </div>
       <div class="flex items-center">
         <div class="text-sm">
@@ -24,7 +35,6 @@
 </template>
 
 <script>
-
 export default {
   props: {
     img: null,
@@ -34,37 +44,47 @@ export default {
     owner: null,
     date: null
   },
-  data: function() {
+  data() {
     return {
       showAll: false,
       mediaCompleted: false,
       thumbnailUrl: '',
       translate: {
         completedMessage: "Great! You've completed all the episodes.",
-        restartButton: "Start Again"
+        restartButton: 'Start Again'
       }
     }
   },
   watch: {
-    media: function() {
+    media() {
       this.thumbnailUrl = this.media.coverAsset.thumbnailUrl
       this.mediaCompleted = this.media.completed
-    },
+    }
   },
   methods: {
-    startOver: function() {
+    startOver() {
       this.mediaCompleted = false
       EventBus.$emit('MEDIA_STARTOVER')
     },
-    clickCtaButtonPayload: function() {
-      return `{
+    clickCtaButtonPayload() {
+      return (
+        `{
         "title": "click media cta button",
-        "media_id":` + window._app_channels_consumption.mediaId + `,
-        "media_name": "` + window._app_channels_consumption.mediaTitle + `",
-        "cta_text": "` + window._app_channels_consumption.ctaText + `",
-        "cta_link": "` + window._app_channels_consumption.ctaLink + `"
+        "media_id":` +
+        window._app_channels_consumption.mediaId +
+        `,
+        "media_name": "` +
+        window._app_channels_consumption.mediaTitle +
+        `",
+        "cta_text": "` +
+        window._app_channels_consumption.ctaText +
+        `",
+        "cta_link": "` +
+        window._app_channels_consumption.ctaLink +
+        `"
       }`
-    },
+      )
+    }
   }
 }
 </script>
